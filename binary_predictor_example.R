@@ -22,8 +22,8 @@ dataframe = Eb
 predictor = "ACE"
 PRS =  "PRS"
 
-# This part use rstatix to perform the t test for mean comparisons.
-# rstatix can run other comparisons as well, check package's the instructions.
+# This part uses rstatix to perform the t-test for mean comparisons.
+# rstatix can run other comparisons as well, check the package's instructions.
 # add_significance annotates marks for significance from (0, 1e-04, 0.001, 0.01, 0.05, 1) to ("****", "***", "**", "*", "ns").
 stat.test <- dataframe %>%
   t_test(formula(paste(PRS, "~", predictor))) %>%
