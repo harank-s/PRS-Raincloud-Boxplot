@@ -18,13 +18,13 @@ You can apply the binary_predictor.R script to your data in just 3 simple steps:
 - Open the binary_predictor.R script and make sure you have installed and loaded the required packages. 
 - Specify your dataframe and corresponding columns with instructions in the script, then just run the whole script.
 
-| PRS     | Predictor |
-|---------|-----------|
-| 1.04236 |    YES    |
-| 0.23701 |    NO     |
-| -0.3433 |    YES    |
-| 0.76127 |    NO     |
-| ...     | ...       |
+|Participant ID| PRS     | Predictor |
+|--------------|---------|-----------|
+| ABCD1        | 1.04236 |    YES    |
+| ABCD2        | 0.23701 |    NO     |
+| ABCD3        | -0.3433 |    YES    |
+| ABCD4        | 0.76127 |    NO     |
+| ...          | ...     | ...       |
 
 You can apply this script to any PRS or risk scores, whether psychiatric, biological, or even other continuous variables, and you can also change the binary variable to any binary predictor you want.  
 
@@ -40,16 +40,16 @@ You can apply the categorical_predictor.R script to your own data in just 3 simp
 - Open the categorical_predictor.R script and make sure you have installed and loaded the required packages. 
 - Specify your dataframe and corresponding columns with instructions in the script, then just run the whole script.
 
-| PRS     | Predictor    |
-|---------|--------------|
-| 1.04236 |    ACE=0     |
-| 0.23701 |    0<ACE<5   |
-| -0.3433 |    4<ACE<8   |
-| 0.76127 |    ACE>=8    |
-| 1.56219 |    4<ACE<8   |
-| -0.2241 |    ACE>=8    |
-| -0.2347 |    0<ACE<5   |
-| ...     | ...          |
+|Participant ID| PRS     | Predictor    |
+|--------------|---------|--------------|
+| ABCD1        | 1.04236 |    ACE=0     |
+| ABCD2        | 0.23701 |    0<ACE<5   |
+| ABCD3        | -0.3433 |    4<ACE<8   |
+| ABCD4        | 0.76127 |    ACE>=8    |
+| ABCD5        | 1.56219 |    4<ACE<8   |
+| ABCD6        | -0.2241 |    ACE>=8    |
+| ABCD7        | -0.2347 |    0<ACE<5   |
+| ...          | ...     | ...          |
 
 You can apply this to any PRS or continuos variables with categorical predictors as you want.
 
@@ -66,14 +66,14 @@ You can apply the multiple_PRS.R script to your data in just 3 simple steps:
 - Open the multiple_PRS.R script and make sure you have installed and loaded the required packages. 
 - Specify your dataframe and corresponding columns with instructions in the script, then just run the whole script.
 
-| PRS     | Predictor    |   PRS Type   |
-|---------|--------------|--------------|
-| 1.04236 |    ACE=0     |     ADHD     |
-| 0.23701 |    0<ACE<5   |     BD       |
-| -0.3433 |    4<ACE<8   |     SCZ      |
-| 0.76127 |    ACE>=8    |     MDD      |
-| 1.56219 |    4<ACE<8   |     BD       |
-| -0.2241 |    ACE>=8    |     SCZ      |
-| -0.2347 |    0<ACE<5   |     ADHD     |
-| -0.0839 |    ACE=0     |     MDD      |
-| ...     | ...          | ...          |
+|Participant ID| PRS     | Predictor    |   PRS Type   |
+|--------------|---------|--------------|--------------|
+| ABCD1        | 1.78562 |    ACE=0     |     ADHD     |
+| ABCD1        | 0.85215 |    ACE=0     |     BD       |
+| ABCD1        | -0.4723 |    ACE=0     |     SCZ      |
+| ABCD1        | 0.18425 |    ACE=0     |     MDD      |
+| ABCD2        | 1.35694 |    ACE>=8    |     ADHD     |
+| ABCD2        | -0.8452 |    ACE>=8    |     BD       |
+| ABCD2        | -0.1426 |    ACE>=8    |     SCZ      |
+| ABCD2        | -0.1875 |    ACE>=8    |     MDD      |
+| ...          | ...     | ...          | ...          |
